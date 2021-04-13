@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CurrencyConverter</name>
+    </assembly>
+    <members>
+        <member name="P:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyInputParameters.Amount">
+            <summary>
+            The value of currency to be converted
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyInputParameters.FromCurrency">
+            <summary>
+            From currency which the value has to be converted
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyInputParameters.ToCurrency">
+            <summary>
+            To Currency which the value has to be converted
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyOutput.Amount">
+            <summary>
+            The Amount of currency to be converted
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyOutput.CurrencyName">
+            <summary>
+            Name of the currency to be retrieved.Note: Exact Currency code should be given Please refer Get cureencies API to get the Code
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyOutput.AddtionalInfo">
+            <summary>
+            Addtional Or summary information of the conversion
+            </summary>
+        </member>
+        <member name="T:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyRates">
+            <summary>
+            These are the currency obtains from openexchangerates.com
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyRates.license">
+            <summary>
+            Liscense of openexchangerates.com
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyRates.timestamp">
+            <summary>
+            The timestamp when the currency rate is extracted 
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyRates.base">
+            <summary>
+            The Base value of the conversion is always dollors
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Controllers.CurrencyConverterController.CurrencyRates.rates">
+            <summary>
+            The latest currency rates
+            </summary>
+        </member>
+        <member name="M:CurrencyConverter.Controllers.CurrencyConverterController.ConvertCurrency(CurrencyConverter.Controllers.CurrencyConverterController.CurrencyInputParameters)">
+            <summary>
+            Converts between different currencies
+            </summary>
+            <param name="currencyInputParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CurrencyConverter.Controllers.CurrencyConverterController.GetCurrencies">
+            <summary>
+            Retreives the list of currencies available for conversion.
+            Note :The conversion base is dollor.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CurrencyConverter.Helper.DbContextExtensions.Seed(CurrencyConverter.Models.CurrencyDBContext)">
+            <summary>
+            This function will seed  the data for each object on every instance creation of the parent record.
+            ALl this data is stored is in built memory of .net core
+            </summary>
+            <param name="dbContext"> A complex object which performs the object relation mapping</param>
+        </member>
+        <member name="P:CurrencyConverter.Models.LastTransactions.FromCurrency">
+            <summary>
+            Name of the currency to be retrieved.Note: Exact Currency code should be given Please refer Get cureencies API to get the Code
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Models.LastTransactions.ToCurrency">
+            <summary>
+            Addtional Or summary information of the conversion
+            </summary>
+        </member>
+        <member name="P:CurrencyConverter.Models.LastTransactions.TransactionTime">
+            <summary>
+            Time which the conversion take place
+            </summary>
+        </member>
+    </members>
+</doc>
